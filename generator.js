@@ -28,12 +28,16 @@ module.exports = function generateCharlikeTemplates (app) {
   app.use(require('generate-license'))
   app.use(require('generate-travis'))
 
-  app.task('charlike', ['editorconfig', 'license-mit', 'travis', 'default'])
-  task(app, 'default', ['**/*'])
+  app.task('charlike', ['default'])
+  task(app, 'default', ['**/*'], [
+    'editorconfig',
+    'license-mit',
+    'travis'
+  ])
 }
 
-function task (app, name, patterns) {
-  app.task(name, function (cb) {
+function task (app, name, patterns, deps) {
+  app.task(name, deps || [], function (cb) {
     var src = app.options.srcBase || path.join(__dirname, 'templates');
     return app.src(patterns, { cwd: src })
       .pipe(app.renderFile('*')).on('error', console.error)
