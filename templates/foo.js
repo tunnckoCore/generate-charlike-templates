@@ -1,6 +1,6 @@
 ---
 rename:
-  basename: bar.js
+  basename: test.js
 install: ['mukla']
 ---
 

@@ -37,7 +37,7 @@ module.exports = function generateCharlikeTemplates (app) {
 }
 
 function task (app, name, patterns, deps) {
-  app.task(name, deps || [], function (cb) {
+  app.task(name, deps || [], function () {
     var src = app.options.srcBase || path.join(__dirname, 'templates');
     return app.src(patterns, { cwd: src })
       .pipe(app.renderFile('*')).on('error', console.error)
