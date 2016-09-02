@@ -1,0 +1,48 @@
+{
+  "name": "generate-charlike-templates",
+  "version": "0.0.0",
+  "description": "My own @generate generator for scaffolding projects and populating templates.",
+  "repository": "tunnckoCore/generate-charlike-templates",
+  "author": "Charlike Mike Reagent <@tunnckoCore> (http://www.tunnckocore.tk)",
+  "precommit.silent": true,
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "standard && node test.js"
+  },
+  "dependencies": {
+    "generate-defaults": "^0.6.0",
+    "generate-editorconfig": "^0.2.1",
+    "generate-install": "^0.2.1",
+    "generate-license": "^0.5.0",
+    "generate-travis": "^0.2.0",
+    "is-valid-app": "^0.2.0"
+  },
+  "devDependencies": {
+    "mukla": "^0.4.1",
+    "pre-commit": "*"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "charlike",
+    "generate",
+    "generategenerator",
+    "generatejs",
+    "generateplugin",
+    "scaffold",
+    "template"
+  ],
+  "verb": {
+    "run": true,
+    "toc": false,
+    "layout": "empty",
+    "tasks": [
+      "readme"
+    ],
+    "lint": {
+      "reflinks": true
+    }
+  }
+}

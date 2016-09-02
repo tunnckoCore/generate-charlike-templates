@@ -1,0 +1,8 @@
+---
+rename:
+  basename: bar.md
+---
+
+# <%= name %> 
+
+> <%= description %>
