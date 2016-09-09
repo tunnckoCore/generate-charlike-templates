@@ -1,14 +1,14 @@
-# .gitignore <https://github.com/tunnckoCore/dotfiles>
-
 # Always-ignore dirs #
 # ####################
 _gh_pages
 node_modules
+jspm_packages
 bower_components
 components
 vendor
 build
 dest
+dist
 src
 lib-cov
 coverage
@@ -31,6 +31,7 @@ generate-charlike-templates
 
 # OS, Logs and databases #
 # #########################
+logs
 *.pid
 *.dat
 *.log
@@ -50,3 +51,23 @@ npm-debug.log
 .directory
 ._*
 lcov.info
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+
+# nyc test coverage
+.nyc_output
+
+# Grunt intermediate storage
+# see here: http://gruntjs.com/creating-plugins#storing-task-files
+.grunt
+
+# Optional npm cache directory
+.npm
+
+# Optional REPL history
+.node_repl_history

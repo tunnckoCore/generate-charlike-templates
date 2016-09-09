@@ -16,7 +16,7 @@ nbproject
 cache
 temp
 tmp
-<%= name %>
+<%= ask('name') %>
 
 # Packages #
 # ##########
