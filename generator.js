@@ -28,21 +28,34 @@ module.exports = function generateCharlikeTemplates (app) {
   app.use(require('generate-license'))
   app.use(require('generate-travis'))
 
-  app.task('charlike', ['default', 'install'])
   task(app, 'default', ['**/*'], [
+    'package',
     'editorconfig',
+    'contributing',
     'license-mit',
     'travis',
     'install'
   ])
+
+  app.task('contributing', function (cb) {
+    return file(app, 'CONTRIBUTING.md', cb)
+  })
+
+  app.task('package', function (cb) {
+    return file(app, 'package.json', cb)
+  })
 }
 
 function task (app, name, patterns, deps) {
-  app.task(name, deps || [], function () {
-    var src = app.options.srcBase || path.join(__dirname, 'templates')
-    return app.src(patterns, { cwd: src })
-      .pipe(app.renderFile('*')).on('error', console.error)
-      .pipe(app.conflicts(app.cwd)).on('error', console.error)
-      .pipe(app.dest(app.cwd)).on('error', console.error)
+  app.task(name, deps || [], function (cb) {
+    return file(app, patterns, cb)
   })
+}
+
+function file(app, patterns, cb) {
+  var src = app.options.srcBase || path.join(__dirname, 'templates')
+  return app.src(patterns || [], { cwd: src })
+    .pipe(app.renderFile('*')).on('error', cb)
+    .pipe(app.conflicts(app.cwd)).on('error', cb)
+    .pipe(app.dest(app.cwd)).on('error', cb)
 }
