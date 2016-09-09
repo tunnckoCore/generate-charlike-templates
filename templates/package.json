@@ -1,0 +1,4 @@
+{
+  "name": "<%= ask('name') %>",
+  "precommit.silent": true
+}
