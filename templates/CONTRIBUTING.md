@@ -18,7 +18,7 @@ But you aren't limited to these things. Use your imagination. If you like a proj
 
 As a user of `<%= ask('name') %>` you're the perfect candidate to help us improve our documentation. Typo corrections, error fixes, better explanations, more examples, etc. Open issues for things that could be improved. Anything. Even improvements to this document.
 
-Use the [`docs` label](https://github.com/<%= repository %>/labels/docs) to find suggestions for what we'd love to see more documentation on.
+Use the [`docs` label](https://github.com/<%= ask('owner') %>/<%= ask('name') %>/labels/docs) to find suggestions for what we'd love to see more documentation on.
 
 ### Improve issues
 
@@ -28,7 +28,7 @@ Some issues are created with missing information, not reproducible, or plain inv
 
 We're always looking for more opinions on discussions in the issue tracker. It's a good opportunity to influence the future direction of AVA.
 
-The [`question` label](https://github.com/<%= repository %>/labels/question) is a good place to find ongoing discussions.
+The [`question` label](https://github.com/<%= ask('owner') %>/<%= ask('name') %>/labels/question) is a good place to find ongoing discussions.
 
 
 ## Why should I contribute?
@@ -135,7 +135,7 @@ This document is adapted from a few Contributing Guides. It is more general and 
 ## License
 
 Released under [Creative Commons](https://creativecommons.org/licenses/by/3.0/).  
-Copyright © 2016, [Charlike Mike Reagent](https://twitter.com/jonschlinkert).
+Copyright © 2016, [Charlike Mike Reagent](https://twitter.com/tunnckoCore).
 
 [gfm]: https://help.github.com/articles/creating-and-highlighting-code-blocks/
 [avajs]: https://github.com/avajs/ava/blob/master/contributing.md

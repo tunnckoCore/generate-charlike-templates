@@ -1,4 +1,5 @@
 {
   "name": "<%= ask('name') %>",
-  "precommit.silent": true
+  "precommit.silent": true,
+  "repository": "<%= ask('owner') %>/<%= ask('name') %>"
 }

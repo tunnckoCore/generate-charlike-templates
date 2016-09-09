@@ -1,3 +1,8 @@
+---
+rename:
+  basename: .gitignore
+---
+
 # Always-ignore dirs #
 # ####################
 _gh_pages
