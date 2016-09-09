@@ -1,5 +1,9 @@
 ---
 install:
+  global: [
+    "verb",
+    "verb-generate-readme"
+  ]
   dependencies: ["lazy-cache"]
   devDependencies: [
     "coveralls",
