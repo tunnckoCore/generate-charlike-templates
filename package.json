@@ -11,6 +11,7 @@
     "test": "echo 'ok'"
   },
   "dependencies": {
+    "base-task-alias": "^0.1.0",
     "generate-defaults": "^0.6.0",
     "generate-gitignore": "^0.2.6",
     "generate-install": "^0.2.1",
