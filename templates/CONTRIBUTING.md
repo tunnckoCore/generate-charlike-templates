@@ -124,6 +124,7 @@ This document is adapted from a few Contributing Guides. It is more general and 
 - [AVA's Contributing Guide][avajs]
 - [Amending a commit Guide][amending]
 - [Creating and highlighting code blocks][gfm]
+- [Contributing to Open Source on GitHub][os-on-github]
 
 ### Authors
 
@@ -142,3 +143,4 @@ Copyright © 2016, [Charlike Mike Reagent](http://www.tunnckocore.tk).
 [idiomatic]: https://github.com/jonschlinkert/idiomatic-contributing
 [awesomelist]: https://github.com/jonschlinkert/awesome-contributing
 [amending]: https://github.com/RichardLitt/docs/blob/master/amending-a-commit-guide.md
+[os-on-github]: https://guides.github.com/activities/contributing-to-open-source/
