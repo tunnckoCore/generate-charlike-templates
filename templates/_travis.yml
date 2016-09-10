@@ -22,8 +22,6 @@ matrix:
     - node_js: "0.12"
 
 notifications:
-  email:
-    on_success: never
-    on_failure: never
+  email: false
 
 after_success: npm run coverage
