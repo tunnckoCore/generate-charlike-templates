@@ -25,7 +25,7 @@ module.exports = function generateCharlikeTemplates (app) {
 
   app.use(require('generate-defaults'))
   app.use(require('generate-install'))
-  app.use(require('base-task-alias'))
+  app.use(require('base-task-alias')())
   app.use(function (app) {
     app.define('taskRender', function taskRender (name, deps, patterns) {
       // if you wanna add only `name` and `deps`,
