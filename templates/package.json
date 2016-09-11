@@ -1,16 +1,20 @@
 ---
 install:
   global: [
-    "verb",
+    "verbose/verb#dev",
     "verb-generate-readme"
   ]
   dependencies: ["lazy-cache"]
   devDependencies: [
+    "commitizen",
     "coveralls",
+    "cz-conventional-changelog",
+    "husky",
     "mukla",
     "nyc",
-    "pre-commit",
-    "standard"
+    "standard",
+    "standard-version",
+    "validate-commit-msg"
   ]
 ---
 {
