@@ -1,6 +1,6 @@
 {
   "name": "generate-charlike-templates",
-  "version": "0.3.1",
+  "version": "0.4.0",
   "description": "My own @generate generator for scaffolding projects and populating templates.",
   "repository": "tunnckoCore/generate-charlike-templates",
   "author": "Charlike Mike Reagent <@tunnckoCore> (http://www.tunnckocore.tk)",
