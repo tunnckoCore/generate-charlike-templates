@@ -10,5 +10,6 @@ var test = require('mukla')
 var <%= camelcase(ask('name')) %> = require('./index')
 
 test('foo', function (done) {
+  <%= camelcase(ask('name')) %>()
   done()
 })
