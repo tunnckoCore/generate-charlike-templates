@@ -23,6 +23,7 @@ module.exports = function generateCharlikeTemplates (app) {
    * Plugins
    */
 
+  app.use(require('verb-repo-data'))
   app.use(require('generate-defaults'))
   app.use(require('base-task-alias')())
   app.use(function (app) {
